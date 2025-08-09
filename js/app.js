@@ -6,7 +6,7 @@ const influencerForm = document.getElementById('influencerForm');
 const cancelForm = document.getElementById('cancelForm');
 const priceLine = document.getElementById('priceLine');
 const pixelsLeftEl = document.getElementById('pixelsLeft');
-const paymentUrl = 'https://paypal.me/YourUSAccount';
+const paymentUrl = 'https://paypal.me/grbuz';
 
 const TOTAL_PIXELS = 1_000_000; // 100x100 blocks * 100 pixels each
 
