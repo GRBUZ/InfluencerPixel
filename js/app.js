@@ -12,10 +12,11 @@ const TOTAL_PIXELS = 1_000_000; // 100x100 blocks * 100 pixels each
 
 // ----- Pricing config (10¢ every 1,000 pixels = every 10 blocks) -----
 function getBlocksSold() { return Object.keys(purchasedBlocks).length; } // 1 block = 100 px
+
+// +$0.01 every 1,000 pixels = every 10 blocks
 function getCurrentPixelPrice() {
   const steps = Math.floor(getBlocksSold() / 10); // 10 blocks = 1,000 px
-  const price = 1 + steps * 0.10;
-  return Math.round(price * 100) / 100;
+  return +(1 + steps * 0.01).toFixed(2);
 }
 function getCurrentBlockPrice() { return Math.round(getCurrentPixelPrice() * 100 * 100) / 100; }
 function formatUSD(n) { return '$' + n.toFixed(2); }
