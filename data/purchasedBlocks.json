@@ -1,6 +1,6 @@
 {
   "0": {
-    "imageUrl": "assets/Images/test2.jpg",
+    "imageUrl": "https://picsum.photos/100?random=1",
     "linkUrl": "https://example.com"
   }
 }
