@@ -6,10 +6,10 @@ const influencerForm = document.getElementById('influencerForm');
 const cancelForm = document.getElementById('cancelForm');
 const priceLine = document.getElementById('priceLine');
 const pixelsLeftEl = document.getElementById('pixelsLeft');
-const paymentUrl = 'https://paypal.me/YourUSAccount'; // <-- remplace par ton lien
+const paymentUrl = 'https://paypal.me/YourUSAccount'; // TODO: set yours
 
 const TOTAL_PIXELS = 1_000_000; // 100x100 blocks * 100 pixels each
-const DATA_VERSION = 1; // incrémente pour invalider le cache si besoin
+const DATA_VERSION = 1; // bump to invalidate cache on JSON
 
 // +$0.01 every 1,000 pixels = every 10 blocks
 function getBlocksSold() { return Object.keys(purchasedBlocks).length; } // 1 block = 100 px
