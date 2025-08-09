@@ -6,17 +6,17 @@ const influencerForm = document.getElementById('influencerForm');
 const cancelForm = document.getElementById('cancelForm');
 const priceLine = document.getElementById('priceLine');
 const pixelsLeftEl = document.getElementById('pixelsLeft');
-const paymentUrl = 'https://paypal.me/grbuz';
+const paymentUrl = 'https://paypal.me/YourUSAccount'; // <-- remplace par ton lien
 
 const TOTAL_PIXELS = 1_000_000; // 100x100 blocks * 100 pixels each
-
-// ----- Pricing config (10¢ every 1,000 pixels = every 10 blocks) -----
-function getBlocksSold() { return Object.keys(purchasedBlocks).length; } // 1 block = 100 px
+const DATA_VERSION = 1; // incrémente pour invalider le cache si besoin
 
 // +$0.01 every 1,000 pixels = every 10 blocks
+function getBlocksSold() { return Object.keys(purchasedBlocks).length; } // 1 block = 100 px
 function getCurrentPixelPrice() {
   const steps = Math.floor(getBlocksSold() / 10); // 10 blocks = 1,000 px
-  return +(1 + steps * 0.01).toFixed(2);
+  const price = 1 + steps * 0.01;
+  return Math.round(price * 100) / 100;
 }
 function getCurrentBlockPrice() { return Math.round(getCurrentPixelPrice() * 100 * 100) / 100; }
 function formatUSD(n) { return '$' + n.toFixed(2); }
@@ -30,7 +30,7 @@ function refreshPixelsLeft() {
 }
 
 let purchasedBlocks = {};
-fetch('data/purchasedBlocks.json')
+fetch(`data/purchasedBlocks.json?v=${DATA_VERSION}`)
   .then(r => r.json())
   .then(data => { purchasedBlocks = data; renderGrid(); refreshHeaderPricing(); refreshPixelsLeft(); updateBuyButtonLabel(); })
   .catch(() => { renderGrid(); refreshHeaderPricing(); refreshPixelsLeft(); updateBuyButtonLabel(); });
@@ -74,18 +74,15 @@ function renderGrid() {
     infoForm.classList.add('hidden');
   });
 
-  // Netlify-ready: we still post the form so Netlify stores it, then redirect to PayPal
+  // Netlify: store submission, then redirect to PayPal
   influencerForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(influencerForm);
     try {
-      // Post to the action (success page) so Netlify captures the submission
       await fetch(influencerForm.action || '/', { method: 'POST', body: data });
     } catch (err) {
       console.error('Netlify form post failed:', err);
     }
-
-    // Compute amount and redirect to PayPal
     const blocks = data.get('blockIndex').split(',');
     const total = Math.round(getCurrentBlockPrice() * blocks.length * 100) / 100;
     const note = `blocks-${blocks.join(',')}`;
