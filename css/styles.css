@@ -95,6 +95,21 @@ body {
 }
 .block.selected { outline: 1px solid var(--accent); }
 
+.block { 
+  display: block;              /* <- important pour <a class="block"> */
+  width: 10px; 
+  height: 10px; 
+  background: #f1f5f9; 
+  border: 1px solid #e2e8f0; 
+}
+
+.block.sold {
+  outline: 1px solid #7c3aed;  /* violet : debug visuel */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* Modal */
 .modal { position: fixed; inset: 0; background: rgba(0,0,0,.6);
   display: flex; justify-content: center; align-items: center; z-index: 1000; }
