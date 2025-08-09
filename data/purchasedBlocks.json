@@ -6,5 +6,45 @@
   "511": {
     "imageUrl": "https://example.com/pic512.jpg",
     "linkUrl": "https://tiktok.com/@user512"
+  },
+  "43": {
+    "imageUrl": "assets/avatars/influencer42.jpg",
+    "linkUrl": "https://instagram.com/influencer42"
+  },
+  "512": {
+    "imageUrl": "https://example.com/pic512.jpg",
+    "linkUrl": "https://tiktok.com/@user512"
+  },
+  "44": {
+    "imageUrl": "assets/avatars/influencer42.jpg",
+    "linkUrl": "https://instagram.com/influencer42"
+  },
+  "513": {
+    "imageUrl": "https://example.com/pic512.jpg",
+    "linkUrl": "https://tiktok.com/@user512"
+  },
+  "45": {
+    "imageUrl": "assets/avatars/influencer42.jpg",
+    "linkUrl": "https://instagram.com/influencer42"
+  },
+  "514": {
+    "imageUrl": "https://example.com/pic512.jpg",
+    "linkUrl": "https://tiktok.com/@user512"
+  },
+  "46": {
+    "imageUrl": "assets/avatars/influencer42.jpg",
+    "linkUrl": "https://instagram.com/influencer42"
+  },
+  "515": {
+    "imageUrl": "https://example.com/pic512.jpg",
+    "linkUrl": "https://tiktok.com/@user512"
+  },
+  "47": {
+    "imageUrl": "assets/avatars/influencer42.jpg",
+    "linkUrl": "https://instagram.com/influencer42"
+  },
+  "516": {
+    "imageUrl": "https://example.com/pic512.jpg",
+    "linkUrl": "https://tiktok.com/@user512"
   }
 }
