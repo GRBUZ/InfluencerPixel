@@ -7,29 +7,25 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="header-top">
-      <h1>Influencers Wall Homepage</h1>
-
-      <!-- Center: pixels left + tagline -->
-      <div class="headline">
-        <div id="pixelsLeft">1,000,000 pixels left</div>
-        <div class="tagline">Claim your spot on the ultimate influencer wall.</div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Center: title + subtitle -->
+      <div class="brand">
+        <div class="title">Influencers Wall : 1 million pixels</div>
+        <div class="subtitle">Claim your spot on the ultimate influencer wall.</div>
       </div>
 
-      <!-- Right: dynamic pricing -->
-      <div class="pricing">
-        <div id="priceLine">1 Pixel = $1.00</div>
+      <!-- Right: price, rule, pixels left, buttons -->
+      <div class="meta">
+        <div id="priceLine" class="price">1 Pixel = $1.00</div>
         <div class="rule">Every 1,000 pixels sold, price +$0.01</div>
-        <div id="pixelsLeft">1,000,000 pixels left</div>
+        <div id="pixelsLeft" class="left">1,000,000 pixels left</div>
+        <div class="actions">
+          <button id="buyButton" class="btn btn-sm">Buy Pixels</button>
+          <button id="contactButton" class="btn btn-sm btn-ghost">Contact Me</button>
+        </div>
       </div>
     </div>
-
-    <div class="controls">
-      <button id="buyButton">Buy Pixels</button>
-      <button id="contactButton">Contact me</button>
-    </div>
-    <p class="hint" id="buyHint">Select blocks on the grid to see the price (each block = 100 px).</p>
   </header>
 
   <!-- Info collection form (modal) -->
@@ -45,12 +41,10 @@
 
       <!-- Netlify form detection -->
       <input type="hidden" name="form-name" value="influencer-purchase">
-
-      <!-- Honeypot (hidden) -->
+      <!-- Honeypot -->
       <p class="hidden">
         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
       </p>
-
       <!-- Selected blocks (set by JS) -->
       <input type="hidden" name="blockIndex" id="blockIndex">
 
@@ -67,8 +61,8 @@
         <input type="email" name="email" required placeholder="you@example.com">
       </label>
       <div class="buttons">
-        <button type="submit">Confirm & Pay</button>
-        <button type="button" id="cancelForm">Cancel</button>
+        <button type="submit" class="btn">Confirm & Pay</button>
+        <button type="button" id="cancelForm" class="btn btn-ghost">Cancel</button>
       </div>
     </form>
   </div>
