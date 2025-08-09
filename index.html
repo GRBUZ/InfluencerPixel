@@ -2,33 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Influencers Wall Homepage</title>
+  <title>Influencers Wall</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <!-- Center: title + subtitle -->
+  <header class="hero">
+    <div class="container hero-row">
       <div class="brand">
-        <div class="title">Influencers Wall : 1 million pixels</div>
-        <div class="subtitle">Claim your spot on the ultimate influencer wall.</div>
+        <h1>Influencers Wall: 1 million pixels</h1>
+        <p class="tagline">Claim your spot on the ultimate influencer wall.</p>
       </div>
-
-      <!-- Right: price, rule, pixels left, buttons -->
-      <div class="meta">
+      <div class="stats">
         <div id="priceLine" class="price">1 Pixel = $1.00</div>
         <div class="rule">Every 1,000 pixels sold, price +$0.01</div>
         <div id="pixelsLeft" class="left">1,000,000 pixels left</div>
-        <div class="actions">
-          <button id="buyButton" class="btn btn-sm">Buy Pixels</button>
-          <button id="contactButton" class="btn btn-sm btn-ghost">Contact Me</button>
-        </div>
       </div>
     </div>
+    <nav class="nav">
+      <div class="container nav-row">
+        <a id="buyButton" class="nav-link" href="javascript:void(0)">Buy Pixels</a>
+        <a id="contactButton" class="nav-link ghost" href="mailto:you@domain.com">Contact Me</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Info collection form (modal) -->
+  <!-- Modal: buy form -->
   <div id="infoForm" class="modal hidden">
     <form id="influencerForm"
           name="influencer-purchase"
