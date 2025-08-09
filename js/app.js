@@ -83,10 +83,11 @@ function renderGrid() {
     } catch (err) {
       console.error('Netlify form post failed:', err);
     }
-    const blocks = data.get('blockIndex').split(',');
-    const total = Math.round(getCurrentBlockPrice() * blocks.length * 100) / 100;
-    const note = `blocks-${blocks.join(',')}`;
-    window.location.href = `${paymentUrl}/${total}?note=${note}`;
+    //const blocks = data.get('blockIndex').split(',');
+    //const total = Math.round(getCurrentBlockPrice() * blocks.length * 100) / 100;
+    //const note = `blocks-${blocks.join(',')}`;
+    //window.location.href = `${paymentUrl}/${total}?note=${note}`;
+    window.location.href = influencerForm.action || '/success.html'; // test: page de succès
   });
 }
 
