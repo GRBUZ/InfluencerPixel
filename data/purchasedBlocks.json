@@ -1,50 +1,6 @@
 {
-  "42": {
+  "0": {
     "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://instagram.com/influencer42"
-  },
-  "511": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://tiktok.com/@user512"
-  },
-  "43": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://instagram.com/influencer42"
-  },
-  "512": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://tiktok.com/@user512"
-  },
-  "44": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://instagram.com/influencer42"
-  },
-  "513": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://tiktok.com/@user512"
-  },
-  "45": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://instagram.com/influencer42"
-  },
-  "514": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://tiktok.com/@user512"
-  },
-  "46": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://instagram.com/influencer42"
-  },
-  "515": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://tiktok.com/@user512"
-  },
-  "47": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://instagram.com/influencer42"
-  },
-  "516": {
-    "imageUrl": "assets/Images/test2.jpg",
-    "linkUrl": "https://tiktok.com/@user512"
+    "linkUrl": "https://example.com"
   }
 }
