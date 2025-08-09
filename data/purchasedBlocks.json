@@ -1,68 +1,10 @@
 {
-{
+  "42": {
+    "imageUrl": "assets/avatars/influencer42.jpg",
+    "linkUrl": "https://instagram.com/influencer42"
+  },
   "511": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
+    "imageUrl": "https://example.com/pic512.jpg",
+    "linkUrl": "https://tiktok.com/@user512"
   }
-}
-{
-  "512": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "513": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "514": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "515": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "611": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "612": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "613": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "614": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "615": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
-{
-  "616": {
-    "imageUrl": "assets/avatars/alex.jpg",
-    "linkUrl": "https://instagram.com/alex"
-  }
-}
 }
